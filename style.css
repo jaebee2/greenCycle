@@ -9,8 +9,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #080808;
-    color: #fff;
+    background: green;
+    color: white;
 }
 #header{
     width: 100%;
@@ -57,7 +57,7 @@ nav ul li ::after{
      content: "";
      width: 0%;
      height: 3px;
-     background:goldenrod;
+     background:white;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -80,7 +80,8 @@ nav ul li a:hover::after{
 }
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: white;
+    font-size: larger;
 }
 .row{
     display: flex;
@@ -188,9 +189,13 @@ nav ul li a:hover::after{
     
     
 }
+
+
+
+
 .work{
     border-radius: 10px;
-    position: relative;
+    position: relative ;
     overflow:hidden;
 }
 .work img{
@@ -200,7 +205,7 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .layer{
-    width: 100%;
+    width: fit-content;
     height: 0;
     background: linear-gradient(rgba(0,0,0,0.6),goldenrod);
     border-radius: 10px;
@@ -221,6 +226,7 @@ nav ul li a:hover::after{
     font-weight: 300;
     margin-top: 0;
     font-size: 20px;
+   
 }
 .layer a{
     margin-top: 20px;
@@ -244,15 +250,15 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid goldenrod;
+    border: 1px solid white;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: green;
     transition: background 0.5s;
 }
 .btn:hover{
-    background: goldenrod;
+    background: white;
 }
 .contact-left{
     flex-basis: 35%;
@@ -284,7 +290,7 @@ nav ul li a:hover::after{
 }
 .btn.btn2{
     display: inline-block;
-    background: goldenrod;
+    background: white;
 }
 .contact-right form{
     width: 100%;
