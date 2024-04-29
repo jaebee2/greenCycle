@@ -100,29 +100,31 @@
     </div>
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">Our Team</h1>
+            <h1 class="sub-title">Our Managment Team</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="JBGREEN.JPG" alt="">
-                    <div class="layer">
-                        <h3>Eng. Jibril Bulama</h3>
-                        <P>Chief of staff , CTO<br> GreenCycle</P>
-                        
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="" alt="">
-                    <div class="layer">
-                        <h3>HON. Idris Bulama</h3>
-                        <p>Chief Opreration Officer<br> GreenCycle</p>
-                        
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="" alt="">
+                    <img src="green.jpg" alt="">
                     <div class="layer">
                         <h3>HON. Jamila Bulama</h3>
-                        <p>Chief Financial Officer</p>
+                        <p>Chief Financial Officer GreenCycle</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="green.jpg" alt="">
+                    <div class="layer">
+                        <h3>HON. Idris Bulama</h3>
+                        <p>Chief Operation Offocer /M.D GreenCycle</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="123.jpg" alt="">
+                    <div class="layer">
+                        
+                        <h3>Eng. Jibril Bulama</h3>
+                        
+                        <P>Chief Technology Officer/M.D  GreenCycle</P>
                         <a href="#"></i></a>
                     </div>
                     
@@ -135,15 +137,16 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Us</h1>
-                    <p><i class="fa-sharp fa-regular fa-at"></i></i> <a href="greencycleinnovations.ng@gmail.com"></a>GreenCycle</p>
+                    <p><a href="mailto:greencycleinnovations.ng@gmail.com">greencycleinnovations.ng@gmail.com</a></p>
                     <p><i class="fa-sharp fa-solid fa-phone"></i> +2348076853167</p>
                     <p><i class="fa-sharp fa-solid fa-phone"></i> +2348076853167</p>
                     <p><i class="fa-sharp fa-solid fa-phone"></i> +2348076853167</p>
                  <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/jibril-bulama-5a103b197?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoePq0RTkRw%2BePvwbKf7WnQ%3D%3D"><i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i></i></a>
+                        <a href="https://www.linkedin.com/in/jibril-bulama-5a103b197?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoePq0RTkRw%2BePvwbKf7WnQ%3D%3D"><i class="fa-brands fa-square-instagram" ></i></i></a>
                 
-                        <a href="https://github.com/jaebee2?tab=repositories"><i class="fa-brands fa-github"></i></a>
-                    
+                        <a href="https://github.com/jaebee2?tab=repositories"><i class="fa-brands fa-whatsapp"></i></i></a>
+                        <a href="https://github.com/jaebee2?tab=repositories"><i class="fa-brands fa-facebook"></i></i></a>
+                        <a href="https://github.com/jaebee2?tab=repositories"><i class="fa-brands fa-twitter"></i></i></a>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet" >
                         <input type="text" name="Name" placeholder="Your Name" required>
@@ -187,22 +190,26 @@
         }
     </script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyUuBkzcHlboJBYgpHPowVhIX_nnKyxCHbPFsJrWvidO4jXjzwVljeOBOi4GLR71XLj/exec'
-        const form = document.forms['submit-to-google-sheet']
-      const msg = document.getElementById("msg")
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyUuBkzcHlboJBYgpHPowVhIX_nnKyxCHbPFsJrWvidO4jXjzwVljeOBOi4GLR71XLj/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                msg.innerHTML = "Submission Success"
+                msg.innerHTML = "Submission Success";
                 setTimeout(function(){
-                    msg.innerHTML = ""
-
-                }, 2000)
-                form.reset()
+                    msg.innerHTML = "";
+                    // Reload the page
+                    window.location.reload();
+                    // Scroll to the top of the page
+                    window.scrollTo(0, 0);
+                }, 2000);
+                form.reset();
             })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+            .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+    
 </body>
 </html>
