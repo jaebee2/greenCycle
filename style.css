@@ -166,7 +166,8 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: goldenrod;
+    background: white;
+    color: green;
     transform: translateY(-10px);
 }
 #portfolio{
@@ -262,7 +263,7 @@ nav ul li a:hover::after{
 
 }
 .contact-left p i{
-    color: goldenrod;
+    color: white;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -276,7 +277,7 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: goldenrod;
+    color: white;
     transform: translateY(-5px);
 }
 .btn.btn2{
