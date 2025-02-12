@@ -18,7 +18,7 @@
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-           
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
             
                 </ul>
@@ -33,7 +33,7 @@
                 
                
                 <h1>Welcome to <br> Green<span>Cycle</span></h1>  
-                <img src="logo2.PNG" alt="">
+                <img src="g2.jpg" alt="" style="max-width: 500px; margin: auto; border-radius: 5px;">
                 
                 
             </div>
@@ -133,6 +133,53 @@
             
         
     </div>
+
+<!-- Carousel Section (Before Contact Us) -->
+<div id="gallery" style="text-align: center;">
+    <div class="container">
+        <h1 class="sub-title">Our Gallery</h1>
+        <div class="swiper mySwiper" style="max-width: 500px; margin: auto;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="g5.jpg" target="_blank"><img src="g5.jpg" alt="Recycling Process" style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 10px;"></a></div>
+                <div class="swiper-slide"><a href="g1.jpg" target="_blank"><img src="g1.jpg" alt="Plastic Waste Sorting" style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 10px;"></a></div>
+                <div class="swiper-slide"><a href="g3.jpg" target="_blank"><img src="g3.jpg" alt="Eco-friendly Products" style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 10px;"></a></div>
+                <div class="swiper-slide"><a href="g2.jpg" target="_blank"><img src="g2.jpg" alt="Eco-friendly Products" style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 10px;"></a></div>
+                <div class="swiper-slide"><a href="g4.jpg" target="_blank"><img src="g4.jpg" alt="Eco-friendly Products" style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 10px;"></a></div>
+            </div>
+
+            <!-- Add Pagination & Navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Swiper.js Styles & Scripts -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+
+
     <div id="contact">
         <div class="container">
             <div class="row">

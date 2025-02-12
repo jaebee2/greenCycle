@@ -17,8 +17,9 @@ body{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    background-color: black;
 
 }
 .logo{
@@ -59,7 +60,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    padding: 0%;
+    padding-top: 5%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -198,6 +199,12 @@ nav ul li a:hover::after{
     display: block;
     transition: transform 0.5s;
 }
+.swiper-slide{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
 .layer{
     width: auto;
     height: 0;
@@ -331,7 +338,7 @@ nav .fa-solid {
         font-size: 25px;
     }
     nav ul{
-        background: green;
+        background: black;
         position: fixed;
         top: 0;
         right: -150px;
