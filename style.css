@@ -11,20 +11,30 @@ html{
 body{
     background: green;
     color: white;
+    overflow: scroll;
 }
 
 
 nav{
     display: flex;
+    width: 100%;
+    
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: black;
+    flex-grow: 1;
 
 }
 .logo{
-    width: 140px;
+    width: 2px;
    box-shadow: 2px;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 5px;
 }
 nav ul li{
     display: inline-block;
@@ -62,11 +72,12 @@ nav ul li a:hover::after{
 .header-text{
     padding-top: 5%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
+.header-text img{
+    width: 100%;
+    border-radius: 5px;
+    padding: 0% ;
 }
 .header-text h1 span{
     color: green;
@@ -338,20 +349,11 @@ nav .fa-solid {
         font-size: 25px;
     }
     nav ul{
-        background: black;
-        position: fixed;
-        top: 0;
-        right: -150px;
-        width: 100px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-        
+       display: flex;
     }
     nav ul li{
-        display: block;
-        margin: 25px;
+        
+        
         
     }
 nav .fas{
